@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello from the chatbot backend!');
 });
 
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from the API!' });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
